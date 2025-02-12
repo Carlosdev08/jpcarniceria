@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J&P Carnicería y Pescadería</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <nav
+        class="navbar d-inline-flex focus-ring  navbar-expand-lg navbar-light border-2 border-bottom border-secondary navbar-gradient fixed-top">
+        <div class="container-fluid d-flex ">
+            <a href="#" class="navbar-brand">
+                <img src="./assets/images/banner2.jpeg" alt="Icono imagen" width="300" height="300" class="logo-banner">
+            </a>
+            <button type="button" class="navbar-toggler me-2 ms-1" data-bs-toggle="collapse" data-bs-target="#menuNavbar"
+                aria-controls="menuNavbar" aria-expanded="false" aria-label="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="menuNavbar">
+                <ul class="navbar-nav ms-3 nav-pills">
+                    <li class="nav-item "><a href="index.html" class="nav-link active text-bg-light">Home</a></li>
+                    <li class="nav-item">
+                        <a href="./views/carnes.html" class="nav-link">Carne</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Aves</a></li>
+                    <li class="nav-item"><a href="./views/categorias/pezcado.html" class="nav-link">Pescado</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Embutido</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Lotes</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Categorias</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./views/carnes.html">Carne</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./views/categorias/pezcado.html">Pezcado</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="ms-auto ms-2 me-2">
+                <a href="login.html" class="btn btn-outline-primary fw-semibold focus-ring">Iniciar Sesión</a>
+            </div>
+        </div>
+    </nav>
+    <div class="mt-4 bienvenida">
+        <h1 class="fw-bold card-header-pills">Bienvenido a tu tienda online</h1>
+        <p>Encuentra los mejores productos frescos y de calidad.</p>
+    </div>
+    <div class="container-fluid mt-4 d-flex justify-content-center flex-column">
+        <!-- Sección de Bienvenida -->
+        <div id="carouselFront" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./assets/images/ternera-carosel/DSCN1264.JPG" alt="carousel"
+                        class="d-block w-100 carousel-img rounded-1">
+                </div>
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./assets/images/ternera/vacaAcuatica.jpeg" alt="carousel"
+                        class="d-block w-100 carousel-img rounded-1">
+                </div>
+                <div class="carousel-item rounded-1">
+                    <img src="./assets/images/ternera-carosel/DSCN1315.JPG" alt="carousel"
+                        class="d-block w-100 carousel-img rounded-1">
+                </div>
+                <div class="carousel-item rounded-1">
+                    <img src="./assets/images/cerdo.jpeg" alt="carousel" class="d-block w-100 carousel-img rounded-1">
+                </div>
+                <div class="carousel-item rounded-1">
+                    <img src="./assets/images/embutido/embutido.png" alt="carousel"
+                        class="d-block w-100 carousel-img rounded-1">
+                </div>
+                <div class="carousel-item rounded-1">
+                    <img src="./assets/images/ahumado/ahumado.jpeg" alt="carousel"
+                        class="d-block w-100 carousel-img rounded-1">
+                </div>
+                <div class="carousel-item rounded-1">
+                    <img src="./assets/images/pezcado/Mariscos.jpeg" alt="carousel"
+                        class="d-block w-100 carousel-img rounded-1">
+                </div>
+                <div class="carousel-item rounded-1">
+                    <img src="./assets/images/pezcado/Mariscos.jpeg" alt="carousel"
+                        class="d-block w-100 carousel-img rounded-1">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFront" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon text-center" aria-hidden="true"></span>
+                <span class="visually-hidden text-center">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFront" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="mt-4 card-header">
+            <h2 class="fw-bold text-center">Nuestros Productos</h2>
+        </div>
+        <!-- Sección de Categorías -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-4 text-center">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/images/ternera/vacuno.jpeg" class="card-img-top img-fluid" alt="Pollo">
+                    <div class="card-body">
+                        <h5 class="card-title">Ternera</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil rerum
+                            delectus
+                            veniam maiores sequi totam et ad eos, ratione ut cupiditate cum quaerat
+                            .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="./assets/images/pollo/pollo.jpeg" class="card-img-top img-fluid" alt="Pollo">
+                    <div class="card-body">
+                        <h5 class="card-title">Pollo</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil rerum
+                            delectus
+                            veniam maiores sequi totam et ad eos, ratione ut cupiditate cum quaerat
+                            .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/images/pezcado/Mariscos.jpeg" class="card-img-top img-fluid" alt="Casquería">
+                    <div class="card-body">
+                        <h5 class="card-title">Mariscos Frescos</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil rerum
+                            delectus
+                            veniam maiores sequi totam et ad eos, ratione ut cupiditate cum quaerat
+                            .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/images/congelados/congelado.jpeg" class="card-img-top img-fluid" alt="Congelado"
+                        width="300" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Congelado</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil rerum
+                            delectus
+                            veniam maiores sequi totam et ad eos, ratione ut cupiditate cum quaerat
+                            .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/images/pezcado/lubina.jpeg" class="card-img-top img-fluid" alt="Pezcado">
+                    <div class="card-body">
+                        <h5 class="card-title">Pezcado y Mariscos</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil rerum
+                            delectus veniam maiores sequi totam et ad
+                            eos, ratione ut cupiditate cum quaerat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/images/cerdo.jpeg" class="card-img-top img-fluid" alt="Cerdo">
+                    <div class="card-body">
+                        <h5 class="card-title">Cerdo</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil rerum
+                            delectus veniam maiores sequi totam et ad
+                            eos, ratione ut cupiditate cum quaerat</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col mt-4 mb-4">
+                <div class="card h-100">
+                    <img src="./assets/images/cordero/corderoIdeogram.jpeg" class="card-img-top img-fluid"
+                        alt="Ternera">
+                    <div class="card-body">
+                        <h5 class="card-title">Cordero</h5>
+                        <p class="card-text">MLorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil rerum
+                            delectus
+                            veniam maiores sequi totam et ad
+                            eos, ratione ut cupiditate cum quaerat</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4 mb-4">
+                <div class="card h-100 mb-4">
+                    <img src="./assets/images/pavo/imagePavo.jpeg" class="card-img-top img-fluid" alt="Ternera">
+                    <div class="card-body">
+                        <h5 class="card-title">Pavo</h5>
+                        <p class="card-text">MLorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil rerum
+                            delectus
+                            veniam maiores sequi totam et ad
+                            eos, ratione ut cupiditate cum quaerat</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Sección de Productos Destacados -->
+
+    </div>
+    <div class="container">
+        <h4 class="text-center mt-4 mb-4">Nuestras Categorías</h4>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card text-center">
+                    <img src="./assets/images/cerdo.jpeg" class="card-img-top img-fluid" alt="Cerdo">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark-emphasis">Cerdo</h5>
+                        <a href="./views/carnes.html" class="btn btn-outline-primary">Ir a categoría</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="card text-center">
+                    <img src="./assets/images/ternera/chuleton-ternera.jpeg" class="card-img-top img-fluid w-100" alt="Vacuno">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Vacuno</h5>
+                        <a href="./views/carnes.html" class="btn btn-outline-primary">Ir a categoría</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="card text-center">
+                    <img src="./assets/images/pollo/pollo.jpeg" class="card-img-top img-fluid" alt="Aves">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Aves</h5>
+                        <a href="./views/carnes.html" class="btn btn-outline-primary">Ir a categoría</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="card text-center">
+                    <img src="./assets/images/Ahumados-semiconservas.jpeg" class="card-img-top img-fluid" alt="Ahumados">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Ahumados y Semiconservas</h5>
+                        <a href="./views/carnes.html" class="btn btn-outline-primary">Ir a categoría</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="card text-center">
+                    <img src="./assets/images/embutido/Embutidos.jpeg" class="card-img-top img-fluid" alt="Embutidos">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Embutidos</h5>
+                        <a href="./views/carnes.html" class="btn btn-outline-primary">Ir a categoría</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="card text-center">
+                    <img src="./assets/images/Frutos Secos.jpeg" class="card-img-top img-fluid" alt="Frutos Secos">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark fs-3">Frutos Secos</h5>
+                        <a href="./views/carnes.html" class="btn btn-outline-primary">Ir a categoría</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="card text-center">
+                    <img src="./assets/images/ahumado/ahumado.jpeg" class="card-img-top img-fluid" alt="Elaborados">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Elaborados</h5>
+                        <a href="./views/carnes.html" class="btn btn-outline-primary">Ir a categoría</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="card text-center">
+                    <img src="./assets/images/Lotes.jpeg" class="card-img-top img-fluid" alt="Lotes">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Lotes</h5>
+                        <a href="./views/carnes.html" class="btn btn-outline-primary">Ir a categoría</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container my-4">
+            <div class="row">
+                <!-- Columna 1: Información de la tienda -->
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <h5>J&P Carnicería y Pescadería</h5>
+                    <p>Ofrecemos la mejor calidad en carnes y pescados frescos.</p>
+                </div>
+
+                <!-- Columna 2: Enlaces rápidos -->
+                <div class="col-12 col-md-4 text-center">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Productos</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Redes sociales -->
+                <div class="col-12 col-md-4 text-center ">
+                    <h5>Síguenos</h5>
+                    <a href="#" class="text-white me-2"><i class="bi bi-facebook">Facebbok</i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-instagram">Instagram</i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-whatsapp">Whatsapp</i></a>
+                </div>
+            </div>
+
+            <!-- Línea de separación -->
+            <hr class="bg-white">
+
+            <!-- Derechos de autor -->
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 J&P Carnicería y Pescadería. Todos los derechos reservados.</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Popper.js y Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

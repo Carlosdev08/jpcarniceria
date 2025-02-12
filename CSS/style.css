@@ -1,0 +1,95 @@
+body {
+  padding-top: 5rem;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+.container-fluid .logo-banner {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.navbar-custom {
+  background-color: #fff;
+  border-bottom: 4px solid #e7edf1;
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  font-family: "outfi", "Times New Roman", Times, serif;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.navbar {
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.4s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+  
+  font-weight: 500;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #a3b1bc;
+}
+
+.nav-link:focus {
+  
+  color: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .nav-link:focus .nav-link:hover {
+    
+    color: white !important;
+    padding: 5px 10px !important;
+    border-radius: 3px;
+    width: auto;
+    display: inline-block;
+  }
+}
+.bienvenida {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+ .card {
+  cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.navbar-nav ul{
+  cursor: pointer;
+
+}
+
+.navbar-nav ul:hover{
+  background-color: #a3b1bc;
+  border-radius: 4px solid #a3b1bc;
+}
+.card img {   
+   
+    object-fit: cover;
+}
+.card:hover {
+    transform: scale(1.01);
+
+}
+
+.carousel-img{
+height: 700px;
+object-fit: cover;
+}
+.carousel{
+  max-width: 100%;
+}
